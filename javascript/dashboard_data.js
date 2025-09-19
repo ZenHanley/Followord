@@ -17,8 +17,8 @@ const entryThree = {
 };
 
 let addTime = document.getElementById("add-time");
-addTime.addEventListener("click", appendItems);
+addTime.addEventListener("click", appendLogs);
 
-function appendItems() {
-    document.getElementById("previous-logs")
+function appendLogs() {
+    document.getElementById("previous-logs").innerHMTL = "";
 }
