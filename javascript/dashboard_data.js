@@ -20,5 +20,5 @@ let addTime = document.getElementById("add-time");
 addTime.addEventListener("click", appendItems);
 
 function appendItems() {
-    document.getElementById("item")
+    document.getElementById("previous-logs")
 }
