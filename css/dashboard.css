@@ -1,0 +1,48 @@
+
+.dashboard_container {
+  /* leaving extra space for the navigation */
+  padding-top: 4em;
+  display: flex;
+  z-index: 1;
+}
+
+/*-- -------------------------- -->
+<---            SideBar         -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+  #sidebar {
+    background-color: var(--primary);
+    min-width: 8em;
+    z-index: 1000;
+  }
+
+  .sidebar_container {
+    justify-items: start;
+  }
+}
+
+/*-- -------------------------- -->
+<---            Logs            -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+  #logs {
+    background-color: var(--dashboardBackground);
+    padding: var(--sectionPadding);
+    flex: 1;
+  }
+  .topper {
+    color: var(--textBrown)
+  }
+}
+
+/*-- -------------------------- -->
+<---            Graph           -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+    #graph {
+    background-color: var(--dashboardBackground);
+    padding: var(--sectionPadding);
+    flex: 1;
+  }
+}
+

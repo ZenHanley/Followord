@@ -1,0 +1,108 @@
+/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+
+        .split {
+                /* 144px - 300px - leaving extra space for the navigation */
+                padding: clamp(5rem, 10vw, 18.75rem);
+                /* prevents padding and border from affecting height and width */
+                box-sizing: border-box;
+                /* clips the color overlay so it doesn't cause an overflow */
+                overflow: hidden;
+                background-color: var(--primary);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2em;
+        }
+
+        img {
+                width: clamp(15em, 10vh, 50em);
+                height: auto;
+        }
+
+        .centered {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+
+        }
+
+        .centered h1, p {
+                padding-bottom: 2rem;
+        }
+
+        mark.simple {
+                font-weight: 520;
+                background-color: white;
+                border-radius: 25px;
+                line-height: 4rem;
+                padding: 0.5rem 2rem 0.5rem 2rem;
+                color: var(--primary);
+        }
+
+        .text {
+                max-width: 20rem;
+        }
+}
+
+/* Laptop */
+@media only screen and (min-width: 60rem) {
+
+        .text,
+        .button {
+                font-size: var(--desktopTextFontSize);
+                margin-top: 1rem;
+        }
+
+        /* Split the screen in half */
+        .split {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        }
+
+        .text {
+                max-width: 25rem;
+        }
+
+        /* Control the left side */
+        .topper_container,
+        .text {
+        align-items: start;
+        text-align: start;
+        background-color: var(--primary);
+        }
+
+        /* Control the right side */
+        .phone_container {
+        right: 0;
+        background-color: var(--primary);
+        }
+}
+
+/* Desktop */
+@media only screen and (min-width: 70rem) {
+        
+        .topper {
+        font-size: var(--desktopTopperFontSize);
+        line-height: 6.5rem;
+        }
+
+        img {
+                width: 70%;
+        }
+}
+
+/*-- -------------------------- -->
+<---          Pie Chart         -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+        #pie_chart {
+                padding: var(--sectionPadding)
+                
+        }
+}

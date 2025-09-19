@@ -1,0 +1,151 @@
+/* ============================================ */
+/*                   Core Styles                */
+/* ============================================ */
+
+/* Website Customization */
+@media only screen and (min-width: 0rem) {
+    /* ============================================ */
+    /*                Website Colors                */
+    /* ============================================ */
+    :root {
+        --primary: 	hsl(0, 34%, 68%);
+        --secondary: 	hsl(0, 0%, 100%);
+        --nav: 	hsl(0, 34%, 68%);
+        --textColor: hsl(0, 0%, 100%); 
+        --textBrown: hsl(0, 9%, 35%);
+        --dashboardBackground: hsl(0, 24%, 85%);
+
+
+        --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+
+    /* ============================================ */
+    /*               Mobile Font Sizing             */
+    /* ============================================ */    
+        --topperFontSize: clamp(2.3rem, 3.2vw, 4.3rem);
+        --textFontSize: clamp(1.2rem, 3.1vw, 1.3rem);
+    
+    /* ============================================ */
+    /*               Desktop Font Sizing            */
+    /* ============================================ */    
+        --desktopTopperFontSize: clamp(3.2rem, 5.5vw, 4.5rem);
+        --desktopTextFontSize: clamp(1.2rem, 2.3vw, 1.9rem);
+    }
+}
+
+/* Text Class Settings  */
+@media only screen and (min-width: 0rem) {
+    .topper {
+        display: block;
+        font-size: var(--topperFontSize);
+        color: var(--textColor); 
+        font-weight: 700;
+        line-height: 3.5rem;
+        text-align: inherit;
+    }
+
+    .text {
+        margin: 0;
+        max-width: 40.625rem;
+        font-size: var(--textFontSize);
+        line-height: 1.5em;
+        color: var(--textColor);
+        text-align: center;
+    }
+
+
+    .button {
+            width: fit-content;
+            white-space: nowrap;
+            text-transform: uppercase;
+            display: block;
+            font-size: var(--textFontSize);
+            font-weight: 520;
+            background-color: white;
+            border-radius: 25px;
+            padding: 0.5rem 2rem 0.5rem 2rem;
+            color: var(--primary);
+            text-decoration: none;
+    }
+}
+
+/* Reset Margins */
+@media only screen and (min-width: 0rem) {
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Scale full website with the viewport width */
+@media only screen and (min-width: 3000px) {
+    body,
+    html {
+        font-size: 0.55vw;
+    }
+}
+
+/* Set standard settings for html tags */
+@media only screen and (min-width: 0px) {
+    body,
+    html {
+        font-size: 0.55vw;
+        height: 100dvh;
+    }
+    body,
+    html {
+        margin: 0;
+        overflow-x: hidden;
+        padding: 0;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 100%;
+        color: var(--bodyTextColor);
+    }
+
+    *,
+    *:before,
+    *:after {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    body {
+        transition: background-color 0.3s;
+    }
+
+    .container {
+        position: relative;
+        margin: auto;
+        width: 92%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        color: var(--headerColor);
+    }
+
+    p,
+    li,
+    a {
+        margin: 0;
+        line-height: 1.5em;
+    }
+
+    p,
+    li {
+        color: #353535;
+    }
+
+    a,
+    button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

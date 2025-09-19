@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/nav_footer.css">
+</head>
+<body>
+
+<!-- ============================================ -->
+<!--                   Navigation                 -->
+<!-- ============================================ -->
+    <nav>
+        <a href="../index.html">Followord</a>
+    </nav>
+<!-- ============================================ -->
+<!--                   Dashboard                  -->
+<!-- ============================================ -->
+    <section class="dashboard_container">
+        <section id="sidebar">
+            <div class="sidebar_container">
+                <h1 class="text">Home</h1 >
+                <h1 class="text">Add Time</h1>
+                <h1 class="text">Logs</h1>
+                <h1 class="text">Setting</h1>
+            </div>
+        </section>
+    <!-- ============================================ -->
+    <!--                      Logs                    -->
+    <!-- ============================================ -->
+        <section id="logs">
+            <div class="log_container">
+                <div class="topper">German</div>
+
+                <input id="input-type" type = "text" placeholder="Learning Type">
+                <input id="input-time" type = "text" placeholder="Time">
+                <input id="input-date" type = "text" placeholder="Date">
+
+                <button id="add-time" class="button">Add New Time</button> 
+                
+                <div class="topper">Previous Logs</div>
+
+                <div id="previous-logs">
+                    <h2>Items</h2>
+                </div>
+                
+                <div class="previous_log_container">
+                    Learning Type
+                    Time
+                    Date
+                </div>
+
+            </div>
+        </section>
+    <!-- ============================================ -->
+    <!--                      Graph                   -->
+    <!-- ============================================ -->
+        <section id="graph">
+            <div class="graph_container"> 
+                <canvas id="pie_chart"></canvas>
+            </div>
+        </section>
+    </section>
+
+<script src="/node_modules/chart.js/dist/chart.umd.js"></script>
+<script src="/javascript/dashboard_data.js"></script>
+<script src="/javascript/study_graph.js"></script>
+</body>
+</html>
