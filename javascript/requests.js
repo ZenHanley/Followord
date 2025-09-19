@@ -48,25 +48,3 @@ function insertAllUserTime() {
             console.error("Request failed:", error);
 });
 }
-/* Inserts new Logs into the user "Dashboard" from dashboard_data.js */
-function insertNewLogs(location) {
-    return fetch ("http://localhost:3000/api/locations", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json", // tells backend to expect JSON
-        },
-        body: JSON.stringify(location)
-        })
-        .then(response => {
-            if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.text(); // We're going to receive text as response
-        })
-        .then(data => {
-            console.log("Server response:", data);
-        })
-        .catch(error => {
-            console.error("Request failed:", error);
-});
-}

@@ -15,3 +15,10 @@ const entryThree = {
     length: "1 Hour",
     date: "12/09/2025"
 };
+
+let addTime = document.getElementById("add-time");
+addTime.addEventListener("click", appendItems);
+
+function appendItems() {
+    document.getElementById("item")
+}
