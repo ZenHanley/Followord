@@ -17,8 +17,24 @@ const entryThree = {
 };
 
 let addTime = document.getElementById("add-time");
-addTime.addEventListener("click", appendLogs);
+addTime.addEventListener("click", appendLogs());
 
 function appendLogs() {
-    document.getElementById("previous-logs").innerHMTL = "";
+    console.log("activation")
+
+    let blank = "";
+
+    const allLogs = document.getElementById("previous-logs");
+
+    for (let key in entryOne) {
+        
+        let element = entryOne[key];
+        
+        let appendLogs = `<div>Name: ${element}</div>`;
+
+        blank = blank + appendLogs;
+    }
+
+    allLogs.innerHTML = blank;
+
 }
