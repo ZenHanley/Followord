@@ -61,6 +61,7 @@
             font-size: var(--textFontSize);
             font-weight: 520;
             background-color: white;
+            border: 0;
             border-radius: 25px;
             padding: 0.5rem 2rem 0.5rem 2rem;
             color: var(--primary);

@@ -16,25 +16,38 @@ const entryThree = {
     date: "12/09/2025"
 };
 
+const entries = [entryOne,entryTwo,entryThree]
 let addTime = document.getElementById("add-time");
-addTime.addEventListener("click", appendLogs());
+addTime.addEventListener("click", appendLogs);
 
 function appendLogs() {
-    console.log("activation")
-
-    let blank = "";
-
+    let placeholder = "";
     const allLogs = document.getElementById("previous-logs");
 
-    for (let key in entryOne) {
-        
-        let element = entryOne[key];
-        
-        let appendLogs = `<div>Name: ${element}</div>`;
+    for (i=0;i<entries.length;i++) {
+        placeholder = placeholder + getLog(entries[i]) + "<br>"
+    }
+    
+    allLogs.innerHTML = placeholder;
+}
 
-        blank = blank + appendLogs;
+function getLog(log) {
+    let placeholder = "";
+
+    for (let key in log) {
+        let element = log[key];
+
+        if (key == `type`) {
+            element = `<mark class=card-top>` +element+ `</mark>`;            
+        }
+
+        let appendLogs = 
+        `<div class=card>` +
+            `<div class="text">` +element+ `</div>` +
+        `</div>`;
+
+        placeholder = placeholder + appendLogs;
     }
 
-    allLogs.innerHTML = blank;
-
+    return placeholder
 }

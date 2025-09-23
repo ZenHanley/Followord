@@ -15,9 +15,11 @@
     min-width: 8em;
     z-index: 1000;
   }
-
   .sidebar_container {
     justify-items: start;
+  }
+  #sidebar .text {
+    color: var(--secondary)
   }
 }
 
@@ -32,6 +34,13 @@
   }
   .topper {
     color: var(--textBrown)
+  }
+  #logs .text {
+    justify-self: start;
+    color: black;
+  }
+  .card {
+    background-color: #F3E9E9;
   }
 }
 
