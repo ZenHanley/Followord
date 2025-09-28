@@ -3,10 +3,16 @@ import { insertNewLog } from './requests.js';
 let addLogButton = document.getElementById("add-log");
 addLogButton.addEventListener("click", appendLogs);
 
+const collection = {};
+
 const type = document.getDocumentById("input-type").value;
 const time = document.getDocumentById("input-time").value;
 const date = document.getDocumentById("input-date").value;
 const entries = [type ,time, date]
+
+collection.type = type;
+collection.time = time;
+collection.date = date;
 
 function appendLogs() {
     let placeholder = "";
@@ -34,3 +40,8 @@ function getLog(log) {
 
     return placeholder
 }
+
+console.log("Inserting Item");
+console.log(collection);
+
+insertNewLog(collecton);
