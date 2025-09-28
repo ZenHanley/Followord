@@ -19,7 +19,7 @@
 <!-- ============================================ -->
 <!--                   Dashboard                  -->
 <!-- ============================================ -->
-    <section class="dashboard_container">
+    <section id="dashboard">
         <section id="sidebar">
             <div class="sidebar_container">
                 <h1 class="text">Home</h1 >
@@ -29,51 +29,31 @@
             </div>
         </section>
     <!-- ============================================ -->
+    <!--                      Graph                   -->
+    <!-- ============================================ -->
+        <section id="graph">
+            <div class="graph_container"> 
+                <h1 class="topper">Today</h1> 
+                <canvas id="pie_chart"></canvas>
+            </div>
+        </section>
+    <!-- ============================================ -->
     <!--                      Logs                    -->
     <!-- ============================================ -->
         <section id="logs">
             <div class="log_container">
                 <div class="topper">German</div>
-
-                <input id="input-type" type = "text" placeholder="Learning Type">
-                <input id="input-time" type = "text" placeholder="Time">
-                <input id="input-date" type = "text" placeholder="Date">
+                
+                <input id="input-type" type="text" placeholder="Learning Type">
+                <input id="input-time" type="text" placeholder="Time">
+                <input id="input-date" type="text" placeholder="Date">
 
                 <button id="add-time" class="button">Add Time</button> 
                 
-                <div class="topper">Previous Logs</div>
+                <div class="topper">Logs</div>
                 
                 <section id="previous-logs">
-                    <div class="card" id="entry-one">
-                        <p class="text"><mark class=card-top>Learning Type</mark></p>
-                        <p class="text">Time</p>
-                        <p class="text">Date</p>
-                    </div>
-                    <br>
-
-                    <div class="card" id="entry-two">
-                        <p class="text"><mark class=card-top>Learning Type</mark></p>
-                        <p class="text">Time</p>
-                        <p class="text">Date</p>
-                    </div>
-                    <br>
-
-                    <div class="card" id="entry-three">
-                        <p class="text"><mark class=card-top>Learning Type</mark></p>
-                        <p class="text">Time</p>
-                        <p class="text">Date</p>
-                    </div>
                 </section>
-            </div>
-        </section>
-    <!-- ============================================ -->
-    <!--                      Graph                   -->
-    <!-- ============================================ -->
-        <section id="graph">
-            <div class="graph_container"> 
-                <canvas id="pie_chart"></canvas>
-            </div>
-        </section>
     </section>
 
 <script src="/node_modules/chart.js/dist/chart.umd.js"></script>

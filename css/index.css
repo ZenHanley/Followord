@@ -32,7 +32,7 @@
         }
 
         .centered h1, p {
-                padding-bottom: 2rem;
+                padding-top: 1em;
         }
 
         mark.simple {
@@ -45,33 +45,37 @@
         }
 
         .text {
-                max-width: 20rem;
+                padding-bottom: 1em;
+                max-width: 25rem;
         }
 }
 
 /* Laptop */
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 64em) {
 
         .text,
         .button {
-                font-size: var(--desktopTextFontSize);
-                margin-top: 1rem;
+                font-size: var(--textFontSize);
         }
 
         /* Split the screen in half */
         .split {
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
         }
 
         .text {
                 max-width: 25rem;
         }
 
+        .centered h1 {
+                padding: 0;
+        }
+
         /* Control the left side */
         .topper_container,
         .text {
+        min-height: 20vh;
         align-items: start;
         text-align: start;
         background-color: var(--primary);

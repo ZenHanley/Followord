@@ -1,57 +1,137 @@
+/*-- -------------------------- -->
+<---          Dashboard         -->
+<--- -------------------------- -*/
+/* Mobile  */
+@media only screen and (min-width: 0rem) {
+  #dashboard {
+    /* leaving extra space for the navigation */
+    padding-top: 4rem;
+  }
+}
 
-.dashboard_container {
-  /* leaving extra space for the navigation */
-  padding-top: 4em;
-  display: flex;
-  z-index: 1;
+/* Desktop  */
+@media only screen and (min-width: 60rem) {
+  #dashboard {
+    display: flex;
+    z-index: 1;
+  }
 }
 
 /*-- -------------------------- -->
 <---            SideBar         -->
 <--- -------------------------- -*/
+/* Mobile  */
 @media only screen and (min-width: 0rem) {
   #sidebar {
-    background-color: var(--primary);
-    min-width: 8em;
-    z-index: 1000;
+    display: none;
   }
-  .sidebar_container {
-    justify-items: start;
+}
+
+/* Desktop  */
+@media only screen and (min-width: 60rem) {
+  #sidebar {
+    display: flex;
+    flex: 0.4;
   }
   #sidebar .text {
     color: var(--secondary)
   }
-}
-
-/*-- -------------------------- -->
-<---            Logs            -->
-<--- -------------------------- -*/
-@media only screen and (min-width: 0rem) {
-  #logs {
-    background-color: var(--dashboardBackground);
-    padding: var(--sectionPadding);
-    flex: 1;
-  }
-  .topper {
-    color: var(--textBrown)
-  }
-  #logs .text {
-    justify-self: start;
-    color: black;
-  }
-  .card {
-    background-color: #F3E9E9;
+  .sidebar_container {
+    justify-items: start;
+    background-color: var(--primary);
+    z-index: 1000;
+    width: 100%;
+    padding: 1em 0 0 1rem;
   }
 }
 
 /*-- -------------------------- -->
 <---            Graph           -->
 <--- -------------------------- -*/
+/* Mobile  */
 @media only screen and (min-width: 0rem) {
     #graph {
-    background-color: var(--dashboardBackground);
-    padding: var(--sectionPadding);
-    flex: 1;
+      width: 100%;
+      justify-items: center;
+      background-color: var(--dashboardBackground);
+      padding: var(--sectionPadding);
+    }
+    .topper {
+      justify-self:center;
+    
   }
 }
+
+/* Desktop  */
+@media only screen and (min-width: 64rem) {
+    #graph {
+      display: flex;
+      flex: 1.5;
+      padding: 3rem 0 0 0;
+  }
+}
+
+/*-- -------------------------- -->
+<---            Logs            -->
+<--- -------------------------- -*/
+/* Mobile  */
+@media only screen and (min-width: 0rem) {
+  #logs {
+    background-color: var(--dashboardBackground);
+    padding-bottom: 3rem;
+  }
+  input {
+    display: flex;
+    justify-self: center;
+    padding-bottom: 1rem;
+  }
+  .button {
+    margin: 1rem 0 1rem 0;
+    justify-self: center;
+  }
+  .card-top {
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .card {
+    justify-self: center;
+    background-color: #F3E9E9;
+    padding-bottom: 0.5rem;
+    min-width: 10rem;
+  }
+  .topper {
+    color: var(--textBrown);
+    padding-bottom: 0.5rem;
+  }
+  #logs .text {
+    justify-self: center;
+    color: black;
+    margin-top: 0.5rem;
+
+  }
+}
+
+/* Desktop  */
+@media only screen and (min-width: 64rem) {
+  #logs {
+    flex: 1.5;
+    padding-top: 3em;
+  }
+  #logs .log_container .title {
+    font-size: var(--desktopTextFontSize);
+  }
+
+  #logs .text {
+    font-size: var(--desktopTextFontSize);
+
+  }
+
+  #logs .log_container .button {
+    font-size: var(--desktopTextFontSize);
+  }
+}
+
 

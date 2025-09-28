@@ -48,3 +48,25 @@ function insertAllUserTime() {
             console.error("Request failed:", error);
 });
 }
+
+function insertNewLog(log) {
+  return fetch("http://localhost:3000/api/usertime", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json", // tells backend to expect JSON
+    },
+    body: JSON.stringify(location)
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(data => {
+      console.log("Server response:", data);
+    })
+    .catch(error => {
+      console.error("Request failed:", error);
+    });
+}

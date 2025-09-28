@@ -8,12 +8,12 @@ new Chart(ctx, {
         label: 'Hours Spent',
         data: [1, 4, 3, 5, 2, 3],
         backgroundColor: [
-        '#C99191',
+        '#aa8888ff',
         '#D06C6C',
-        '#D08E8E',
+        '#a76c6cff',
         '#EB9090',
         '#F9B7B7',
-        '#9b7c7cff'
+        '#9c5353ff'
         ]
     }]
     },

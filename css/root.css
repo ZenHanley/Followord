@@ -10,7 +10,7 @@
     :root {
         --primary: 	hsl(0, 34%, 68%);
         --secondary: 	hsl(0, 0%, 100%);
-        --nav: 	hsl(0, 34%, 68%);
+        --nav: 	#BE7171;
         --textColor: hsl(0, 0%, 100%); 
         --textBrown: hsl(0, 9%, 35%);
         --dashboardBackground: hsl(0, 24%, 85%);
@@ -21,15 +21,15 @@
     /* ============================================ */
     /*               Mobile Font Sizing             */
     /* ============================================ */    
-        --topperFontSize: clamp(2.3rem, 3.2vw, 4.3rem);
-        --textFontSize: clamp(1.2rem, 3.1vw, 1.3rem);
+        --topperFontSize: clamp(2.5rem, 3.2vw, 3.3rem);
+        --textFontSize: clamp(1.2rem, 2.1vw, 1.5rem);
     
     /* ============================================ */
     /*               Desktop Font Sizing            */
     /* ============================================ */    
-        --desktopTopperFontSize: clamp(3.2rem, 5.5vw, 4.5rem);
-        --desktopTextFontSize: clamp(1.2rem, 2.3vw, 1.9rem);
-    }
+        --desktopTopperFontSize: clamp(2.2rem, 3.5vw, 4.5rem);
+        --desktopTextFontSize: clamp(1.6rem, 2.3vw, 1rem);
+    } 
 }
 
 /* Text Class Settings  */
