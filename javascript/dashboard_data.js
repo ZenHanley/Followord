@@ -1,4 +1,4 @@
-import { insertNewLog } from './requests.js';
+import { insertNewLog } from '/javascript/requests.js';
 
 let addLogButton = document.getElementById("add-log");
 addLogButton.addEventListener("click", appendLogs);
@@ -44,4 +44,4 @@ function getLog(log) {
 console.log("Inserting Item");
 console.log(collection);
 
-insertNewLog(collecton);
+insertNewLog(collection);
