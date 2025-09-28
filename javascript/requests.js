@@ -70,3 +70,5 @@ function insertNewLog(log) {
       console.error("Request failed:", error);
     });
 }
+
+export { insertAllUserDetails, insertAllUserTime, insertNewLog};

@@ -1,21 +1,21 @@
+import { insertNewLog } from './requests.js';
+
+let addLogButton = document.getElementById("add-log");
+addLogButton.addEventListener("click", appendLogs);
 
 const type = document.getDocumentById("input-type").value;
 const time = document.getDocumentById("input-time").value;
 const date = document.getDocumentById("input-date").value;
-
-const entries = [type,time,date]
-let addTime = document.getElementById("add-time");
-addTime.addEventListener("click", appendLogs);
+const entries = [type ,time, date]
 
 function appendLogs() {
     let placeholder = "";
-    const allLogs = document.getElementById("previous-logs");
 
     for (i=0;i<entries.length;i++) {
         placeholder = placeholder + `<div class="card">` + getLog(entries[i]) + `</div>` +"<br>";
     }
     
-    allLogs.innerHTML = placeholder;
+    entries.innerHTML = placeholder;
 }
 
 function getLog(log) {
