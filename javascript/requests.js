@@ -49,13 +49,13 @@ function insertAllUserTime() {
 });
 }
 
-function insertNewLog(log) {
+function insertNewLog(new_collection) {
   return fetch("http://localhost:3000/api/usertime", {
     method: "POST",
     headers: {
       "Content-Type": "application/json", // tells backend to expect JSON
     },
-    body: JSON.stringify(location)
+    body: JSON.stringify(new_collection)
   })
     .then(response => {
       if (!response.ok) {

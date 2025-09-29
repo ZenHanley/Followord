@@ -5,9 +5,9 @@ addLogButton.addEventListener("click", appendLogs);
 
 const collection = {};
 
-const type = document.getDocumentById("input-type").value;
-const time = document.getDocumentById("input-time").value;
-const date = document.getDocumentById("input-date").value;
+const type = document.getElementById("input-type").value;
+const time = document.getElementById("input-time").value;
+const date = document.getElementById("input-date").value;
 const entries = [type ,time, date]
 
 collection.type = type;
@@ -17,10 +17,9 @@ collection.date = date;
 function appendLogs() {
     let placeholder = "";
 
-    for (i=0;i<entries.length;i++) {
+    for (let i=0;i<entries.length;i++) {
         placeholder = placeholder + `<div class="card">` + getLog(entries[i]) + `</div>` +"<br>";
     }
-    
     entries.innerHTML = placeholder;
 }
 
