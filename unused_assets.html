@@ -1,0 +1,66 @@
+<!-- [No Longer In Use] Log HTML Section -->
+<!-- <section id="logs">
+    <div class="log_container">
+        <div class="topper">German</div>
+        <div class="inputs">
+            <input id="input-type" type="text" placeholder="Learning Type">
+            <input id="input-time" type="time" placeholder="Time">
+            <input id="input-date" type="date" placeholder="Date">
+        </div>
+
+        <button id="add-log" class="button">Add Log</button> 
+        
+        <div class="topper">Logs</div>
+        <section id="previous-logs">
+            <p class="text">Enter New Data</p>
+        </section>
+    </div>
+</section> -->
+
+<!-- [No Longer In Use] Log JS Section -->
+<!-- import { insertNewLog } from '/javascript/requests.js';
+
+let addLogButton = document.getElementById("add-log");
+addLogButton.addEventListener("click", appendLogs);
+
+function appendLogs() {
+    // let placeholder = "";
+
+    const collection = {};
+
+    const type = document.getElementById("input-type").value;
+    const time = document.getElementById("input-time").value;
+    const date = document.getElementById("input-date").value;
+    // const entries = [type ,time, date]
+
+    collection.type = type;
+    collection.time = time;
+    collection.date = date;
+
+    console.log("Inserting Item");
+    console.log(collection);
+
+    insertNewLog(collection);
+
+/*     for (let i=0;i<entries.length;i++) {
+        placeholder = placeholder + `<div class="card">` + getLog(entries[i]) + `</div>` +"<br>";
+    }
+    entries.innerHTML = placeholder; */
+}
+
+function getLog(log) {
+    let placeholder = "";
+
+    for (let key in log) {
+        let element = log[key];
+
+        if (key == `type`) {
+            element = `<p class="card-top title">`+element+`</p>`;            
+        }
+
+        let appendLogs = `<div class="text">`+element+`</div>`
+        placeholder = placeholder + appendLogs;
+    }
+
+    return placeholder
+} -->
