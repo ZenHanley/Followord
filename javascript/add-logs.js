@@ -1,3 +1,4 @@
+console.log("add-logs.js loaded in")
 let addLog = document.getElementById("add-log");
 
 function logs() {
