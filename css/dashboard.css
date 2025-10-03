@@ -5,7 +5,8 @@
 @media only screen and (min-width: 0rem) {
   #dashboard {
     /* leaving extra space for the navigation */
-    padding-top: 4rem;
+    padding-top: 3rem;
+    height: 100dvh;
   }
 }
 
@@ -18,7 +19,7 @@
 }
 
 /*-- -------------------------- -->
-<---            SideBar         -->
+<---           SideBar          -->
 <--- -------------------------- -*/
 /* Mobile  */
 @media only screen and (min-width: 0rem) {
@@ -31,17 +32,18 @@
 @media only screen and (min-width: 60rem) {
   #sidebar {
     display: flex;
-    flex: 0.4;
+    flex: 0.5;
   }
-  #sidebar .text {
-    color: var(--secondary)
+  #sidebar a {
+    color: var(--secondary);
+    font-weight: normal;
   }
   .sidebar_container {
     justify-items: start;
     background-color: var(--primary);
-    z-index: 1000;
+    z-index: 90;
     width: 100%;
-    padding: 1em 0 0 1rem;
+    padding: 3em 0 0 1rem;
   }
 }
 
@@ -56,8 +58,9 @@
       background-color: var(--dashboardBackground);
       padding: var(--sectionPadding);
     }
-    .topper {
+    #graph .topper {
       justify-self:center;
+      color: var(--textBrown);
     
   }
 }
@@ -65,8 +68,7 @@
 /* Desktop  */
 @media only screen and (min-width: 64rem) {
     #graph {
-      display: flex;
-      flex: 1.5;
+      flex: 1;
       padding: 3rem 0 0 0;
   }
 }
@@ -102,9 +104,10 @@
     padding-bottom: 0.5rem;
     min-width: 10rem;
   }
-  .topper {
+  #logs .topper {
     color: var(--textBrown);
     padding-bottom: 0.5rem;
+    text-align: center;
   }
   #logs .text {
     justify-self: center;
@@ -117,7 +120,7 @@
 /* Desktop  */
 @media only screen and (min-width: 64rem) {
   #logs {
-    flex: 1.5;
+    flex: 1;
     padding-top: 3em;
   }
   #logs .log_container .title {

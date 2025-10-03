@@ -26,3 +26,6 @@ new Chart(ctx, {
         }
     }
 });
+
+canvas.width = 100;
+canvas.height = 100;

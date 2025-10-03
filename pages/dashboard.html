@@ -5,27 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/root.css">
-    <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/css/nav_footer.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
 </head>
 <body>
 
 <!-- ============================================ -->
 <!--                   Navigation                 -->
 <!-- ============================================ -->
+    <div class="off-screen-menu">
+        
+        <ul>
+            <a href="/index.html">Home</a>
+            <a href="./logs.html">Logs</a>
+            <a href="./settings.html">Settings</a>
+            <a href="./contact.html">Contact</a>
+        <ul>
+    </div>    
+
     <nav>
-        <a href="../index.html">Followord</a>
+        <a href="../index.html" class="topper">Followord</a>
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
+
 <!-- ============================================ -->
-<!--                   Dashboard                  -->
+<!--                     SideBar                  -->
 <!-- ============================================ -->
     <section id="dashboard">
         <section id="sidebar">
             <div class="sidebar_container">
-                <h1 class="text">Home</h1 >
-                <h1 class="text">Add Time</h1>
-                <h1 class="text">Logs</h1>
-                <h1 class="text">Setting</h1>
+                <a class="topper" href="./logs.html">Logs</a>
+                <a class="topper" href="./settings.html">Settings</a>
+                <a class="topper" href="./contact.html">Contact</a>
+                <button class="topper" id="add-log"> Add Log</button>
+            </div>
+        </section>
+    <!-- ============================================ -->
+    <!--                 Add Logs Button              -->
+    <!-- ============================================ -->
+        <section id="add-logs">
+            <div class="log-button-container">
+                <button class="button" id="add-log">
+                    <img class="button" aria-hidden="true" loading="lazy" decoding="async" src="/images/plus.svg"></a>
+                </button>
             </div>
         </section>
     <!-- ============================================ -->
@@ -52,6 +78,7 @@
 <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
 <script src="/javascript/study_graph.js"></script>
 <script type="module" src="/javascript/requests.js"></script>
-<script type="module" src="/javascript/dashboard_data.js"></script>
+<script src="/javascript/nav_footer.js"></script>
+<script src="/javascript/add-logs.js"></script>
 </body>
 </html>
