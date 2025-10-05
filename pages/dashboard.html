@@ -13,68 +13,101 @@
 <!-- ============================================ -->
 <!--                   Navigation                 -->
 <!-- ============================================ -->
-    <div class="off-screen-menu">
-        
-        <ul>
-            <a href="/index.html">Home</a>
-            <a href="./logs.html">Logs</a>
-            <a href="./settings.html">Settings</a>
-            <a href="./contact.html">Contact</a>
-        <ul>
-    </div>    
+<section id="nav">
+        <div class="off-screen-menu">
+            <ul>
+                <a href="/index.html">Home</a>
+                <a href="./logs.html">Logs</a>
+                <a href="./settings.html">Settings</a>
+                <a href="./contact.html">Contact</a>
+            <ul>
+        </div>    
 
-    <nav>
-        <a href="../index.html" class="topper">Followord</a>
-        <div class="menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+        <nav>
+            <a href="../index.html" class="topper">Followord</a>
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+</section>
 
+<!-- ============================================ -->
+<!--                   Dashboard                  -->
+<!-- ============================================ -->
+<section id="dashboard">
 <!-- ============================================ -->
 <!--                     SideBar                  -->
 <!-- ============================================ -->
-    <section id="dashboard">
-        <section id="sidebar">
-            <div class="sidebar_container">
-                <a class="topper" href="./logs.html">Logs</a>
-                <a class="topper" href="./settings.html">Settings</a>
-                <a class="topper" href="./contact.html">Contact</a>
-                <button class="topper" id="add-log"> Add Log</button>
-            </div>
-        </section>
+    <section id="sidebar">
+        <div class="sidebar_container">
+            <a class="topper" href="./logs.html">Logs</a>
+            <a class="topper" href="./settings.html">Settings</a>
+            <a class="topper" href="./contact.html">Contact</a>
+            <button class="topper" id="add-log-sidebar"> Add Log</button>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Emoji Box                  -->
+    <!-- ============================================ -->
+     <section id="emoji">
+        <div class="emoji-container">
+            <h1 class="text">How long did you study for?</h1>
+
+            <picture><img src="/images/smiley_dissappointed.svg" width="auto" height="100px" alt="frown"></picture>
+            <picture><img src="/images/smiley_sad.svg" width="auto" height="100px" alt="frown"></picture>
+            <picture><img src="/images/smiley_no_mouth.svg" width="auto" height="100px" alt="frown"></picture>
+            <picture><img src="/images/smiley_smiling.svg" width="auto" height="100px" alt="frown"></picture>
+            <picture><img src="/images/smiley_happy_laughing.svg" width="auto" height="100px" alt="frown"></picture>
+
+            <button id="lang-button" class="button">Select</button>
+
+        </div>
+     </section>
+    <!-- ============================================ -->
+    <!--                 Language Options             -->
+    <!-- ============================================ -->
+     <section id="language-options">
+        <div class="language-options-container">
+            <h1 class="text">What did you study?</h1>
+        </div>
+     </section>
+
     <!-- ============================================ -->
     <!--                 Add Logs Button              -->
     <!-- ============================================ -->
-        <section id="add-logs">
-            <div class="log-button-container">
-                <button class="button" id="add-log">
-                    test
-                    <!-- <img aria-hidden="true" loading="lazy" decoding="async" src="/images/plus.svg"></a> -->
-                </button>
-            </div>
-        </section>
+    <section id="add-logs">
+        <div class="add-logs-container">
+            <button class="button" id="add-log">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/images/plus.svg"></a>
+            </button>
+        </div>
+    </section>
+
+
     <!-- ============================================ -->
     <!--                      Graph                   -->
     <!-- ============================================ -->
-        <section id="graph">
-            <div class="graph_container"> 
-                <h1 class="topper">Today</h1> 
-                <canvas id="pie_chart"></canvas>
-            </div>
-        </section>
+    <section id="graph">
+        <div class="graph_container"> 
+            <h1 class="topper">Today</h1> 
+            <canvas id="pie_chart"></canvas>
+        </div>
+    </section>
     <!-- ============================================ -->
     <!--                      Logs                    -->
     <!-- ============================================ -->
-        <section id="logs">
-            <div class="log_container">
-                <div class="topper">German</div>
-                <section id="previous-logs">
-                    <p class="text">Enter New Data</p>
-                </section>
-            </div>
-        </section>
+    <section id="logs">
+        <div class="log_container">
+            <div class="topper">German</div>
+            <section id="previous-logs">
+                <p class="text">Enter New Data</p>
+            </section>
+        </div>
+    </section>
+</section>
 
 <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
 <script src="/javascript/study_graph.js"></script>
