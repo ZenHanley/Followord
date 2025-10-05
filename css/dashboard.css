@@ -48,6 +48,99 @@
 }
 
 /*-- -------------------------- -->
+<---        Add Logs Button     -->
+<--- -------------------------- -*/
+/* Mobile  */
+@media only screen and (min-width: 0rem) {
+  .add-logs-container {
+    background-color:var(--dashboardBackground);
+    padding-top: 3em;
+  }
+  #add-logs .button {
+    margin: 0;
+    padding: 0;
+  } 
+}
+
+/* Desktop  */
+@media only screen and (min-width: 64rem) {
+  #add-logs {
+    display: none;
+  } 
+}
+
+/*-- -------------------------- -->
+<---          Emoji Box         -->
+<--- -------------------------- -*/
+/* Mobile  */
+@media only screen and (min-width: 0rem) {
+  #emoji {
+    padding: var(--sectionPadding);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    z-index: 50;
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+  }
+
+  #emoji .emoji-container{
+    background-color: white;
+    padding: var(--sectionPadding);
+    width: fit-content;
+    height: fit-content;
+  }
+
+  #emoji.reveal{
+    opacity: 1;
+    pointer-events: fill;
+  }
+
+  #emoji .text {
+    color: black;
+  }
+
+  #emoji .button {
+    color: var(--secondary);
+    background-color: var(--primary);
+  }
+}
+
+/*-- -------------------------- -->
+<---      Language Options      -->
+<--- -------------------------- -*/
+/* Mobile  */
+@media only screen and (min-width: 0rem) {
+  #language-options {
+    padding: var(--sectionPadding);
+    padding: var(--sectionPadding);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    justify-items: center;
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+  }
+  #language-options .language-options-container {
+    background-color: white;
+    padding: var(--sectionPadding);
+    width: fit-content;
+    height: fit-content;
+  }
+  #language-options .text {
+    color: black;
+  }
+  #language-options.reveal {
+    opacity: 1;
+    pointer-events: fill;
+  }
+}
+
+/*-- -------------------------- -->
 <---            Graph           -->
 <--- -------------------------- -*/
 /* Mobile  */
