@@ -141,6 +141,7 @@
     padding: var(--sectionPadding);
     width: fit-content;
     height: fit-content;
+    justify-content: center;
     gap: 0.5em;
     flex-wrap: wrap;
   }
@@ -154,10 +155,16 @@
   }
   #study-types .text {
     color: black;
+    width: 100%;
   }
   #study-types.reveal {
     opacity: 1;
     pointer-events: fill;
+  }
+
+  #study-types .button {
+    color: var(--secondary);
+    background-color: var(--primary);
   }
 }
 
